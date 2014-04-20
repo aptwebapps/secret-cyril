@@ -1,0 +1,658 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"alert",
+				"alerttext"
+			],
+			[
+				"total",
+				"totalannualcost"
+			],
+			[
+				"user",
+				"usertypecost"
+			],
+			[
+				"chart",
+				"chart_div"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"test",
+				"testvalue1"
+			],
+			[
+				"rx",
+				"rxconditioncost"
+			],
+			[
+				"an",
+				"agerangecost"
+			],
+			[
+				"height",
+				"min-height"
+			],
+			[
+				"baround",
+				"background-color"
+			],
+			[
+				"mrg",
+				"margin-top"
+			],
+			[
+				"Font",
+				"font-size"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"pre",
+				"prescriptionusage"
+			],
+			[
+				"twee",
+				"tweetZ"
+			],
+			[
+				"tweet",
+				"tweetZ"
+			],
+			[
+				"norma",
+				"normalizedVector212"
+			],
+			[
+				"x",
+				"xROTANGLE"
+			],
+			[
+				"length",
+				"lengthCoord"
+			],
+			[
+				"dot",
+				"dotx"
+			],
+			[
+				"text",
+				"textObject"
+			],
+			[
+				"url",
+				"urlSearch"
+			],
+			[
+				"ve",
+				"vector21"
+			],
+			[
+				"tw",
+				"tweetText"
+			],
+			[
+				"tweetTe",
+				"tweetText"
+			],
+			[
+				"tweets",
+				"tweetsIndex"
+			],
+			[
+				"tweetTex",
+				"tweetTexts"
+			],
+			[
+				"create",
+				"createArcText"
+			],
+			[
+				"norm",
+				"normalizedVector211"
+			],
+			[
+				"pin",
+				"pincameraposition"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"normaliz",
+				"normalizedVector212"
+			],
+			[
+				"ea",
+				"earthRadius"
+			],
+			[
+				"space",
+				"spacedPoints"
+			],
+			[
+				"pos",
+				"positionVector1"
+			],
+			[
+				"S",
+				"Scene"
+			],
+			[
+				"posi",
+				"positionVector2"
+			],
+			[
+				"cros",
+				"crossProductVec"
+			],
+			[
+				"conr",
+				"controlPoint"
+			],
+			[
+				"control",
+				"controlPoint"
+			],
+			[
+				"sub",
+				"subtractionVector"
+			],
+			[
+				"Line",
+				"LineStrip"
+			],
+			[
+				"each",
+				"forEach"
+			],
+			[
+				"position",
+				"positionVector1"
+			],
+			[
+				"lat",
+				"latLongToVector3"
+			],
+			[
+				"point",
+				"point1"
+			],
+			[
+				"earth",
+				"earthRadius"
+			],
+			[
+				"eart",
+				"earthRadius"
+			],
+			[
+				"A",
+				"ASTRONAUT"
+			],
+			[
+				"marker",
+				"markerHead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 9297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Concept1b-Index.js",
+			"settings":
+			{
+				"buffer_size": 8643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/Concept1b.css",
+			"settings":
+			{
+				"buffer_size": 5005,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/Concept1b-Chart.js",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/assets/css/style.css",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/assets/css/stream.css",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/data/healthcareplans.js",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/Concept1A-Index.js",
+		"/Users/markbreneman/Desktop/filter.js-master/filter.js",
+		"/Users/markbreneman/Desktop/Concept1 Prototype/Concept1b/data/top_movies_data.js",
+		"/Users/markbreneman/Desktop/Concept1 Prototype/Concept1b/Index.html",
+		"/Users/markbreneman/Desktop/Concept1 Prototype/Concept1b/Concept1A-Index.js",
+		"/Users/markbreneman/Desktop/Concept1 Prototype/Concept1b/Concept1A-Index.html",
+		"/Users/markbreneman/Desktop/filter.js-master/examples/Concept1A-Index.js",
+		"/Users/markbreneman/Desktop/filter.js-master/examples/Concept1A-Index.html",
+		"/Users/markbreneman/Desktop/filter.js-master/examples/stream.html",
+		"/Users/markbreneman/Desktop/Concept1 Prototype/jquery-ui-1.10.4.custom.css",
+		"/Users/markbreneman/Desktop/Fonts.md",
+		"/Users/markbreneman/Library/Caches/Cleanup At Startup/Transmit/E5DD628C-63CE-42BA-B6A4-2BA239CE537C/.htaccess",
+		"/Users/markbreneman/Desktop/CGN001 - DigitalJourneyMap/.htpasswd",
+		"/Users/markbreneman/Desktop/CGN001 - DigitalJourneyMap/.htaccess",
+		"/Users/markbreneman/Desktop/CGN001 - DigitalJourneyMap/test.html",
+		"/Users/markbreneman/Desktop/runtext.ppm",
+		"/Users/markbreneman/Desktop/What are services online that you pay for, have si",
+		"/Users/markbreneman/Desktop/Hypefonts.md",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/CGN001 Notes.md",
+		"/Users/markbreneman/Desktop/jquery",
+		"/Users/markbreneman/Documents/Smart/Dropbox/Apps/Hype/Exports/02.14.14 SousVide UI/02.14.14 SousVide UI.html",
+		"/Users/markbreneman/Documents/Smart/Dropbox/Apps/Hype/Exports/03.09.14 SousVide UI Backup/03.09.14 SousVide UI.html",
+		"/Users/markbreneman/Library/Caches/Cleanup At Startup/Transmit/B40DDB6B-E0E5-4BF6-B61A-7887EA538463/03.09.14 SousVide UI.html",
+		"/Users/markbreneman/Desktop/test.html",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/021814 CGN Employee Journey Mapping Sessions Notes.md",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/At a time where Health and Wellness programs would",
+		"/Users/markbreneman/Desktop/02.18.14 CGN Employee Journey Mapping Sessions Notes.md",
+		"/Users/markbreneman/Desktop/02.18.14 CGN Employee Journey Mapping Sesions Notes",
+		"/Users/markbreneman/Desktop/02.13.14 David Freas.md",
+		"/Users/markbreneman/Desktop/02.13.14 Choicelinxs.md",
+		"/Users/markbreneman/Desktop/101412 ThreeJS-GlobePoints/static/scripts/application.js",
+		"/Users/markbreneman/Desktop/101412 ThreeJS-GlobePoints/templates/index.html",
+		"/Users/markbreneman/Desktop/101412 ThreeJS-GlobePoints/scripts/application.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/index.html",
+		"/Users/markbreneman/Desktop/itp-py-dwd-remote-apis-master/DWDRemoteAPIExample.sublime-project",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/application.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/101412 ThreeJSGlobePoints.sublime-project",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/media/Space01b.png",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/application1.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/three51DevTweak.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/three51.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/three.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/three53.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/test.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/TextPath.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/extramodels.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/three52.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/ExtrudeGeometry.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/scripts/database.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/index.yaml",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/main.py",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/application.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/templates/index.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/models/Astronaut.dae",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/DAT.GUI.min.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/favicon.ico",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/app.yaml",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/helvetiker_regular.typeface.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/index.py",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/styles/base.css",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/curve.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/01 Incoming Information/mrdoob-three.js-ef5f05d/examples/webgl_geometry_shapes.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/media/Space02.jpg",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/01 Incoming Information/twitterEarth/twitterearth.sublime-project",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/templates/simpleline.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/01 Incoming Information/mrdoob-three.js-ef5f05d/examples/webgl_ribbons.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/media/earthTexture.png",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/01 Incoming Information/boilerplate/index.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/THREEx.screenshot.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/GUI Start",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/application.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/templates/TwitterEarth.sublime-workspace",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/01 Incoming Information/twitterEarth/templates/index.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/01 Incoming Information/boilerplate/101512Boilerplate.sublime-project",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/scripts/extramodels.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS-GlobePoints/static/models/MESSENGER.dae",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101412 ThreeJS Boilerplate-mb/js/application-mb.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101112 ThreeJS-GlobePoints/static/scripts/application.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101112 ThreeJS-GlobePoints/static/scripts/three.js",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101112 ThreeJS-GlobePoints/ThreeJS.sublime-project",
+		"/Users/markbreneman/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101112 ThreeJS-GlobePoints/101112 ThreeJS-GlobePoints.tmproj",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101112 ThreeJS-GlobePoints/threejsboilerplate/index.html",
+		"/Users/markbreneman/Documents/ITP/Classes/Fall 2012/Visualizing JS/05 Outgoing Information/101112 ThreeJS-GlobePoints/threejsboilerplate/js/application.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"healthcareplans.js",
+			"healthcareplan.js",
+			"",
+			"application.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"covera",
+			"me+1",
+			"cost",
+			"donut",
+			"slider",
+			"d8",
+			"slider",
+			"runtime",
+			"star",
+			"stars",
+			"director",
+			"outline",
+			"Movies",
+			"style",
+			"colorado",
+			"arizona",
+			"Esveld_Type",
+			"california",
+			"futuratot-bol-webfont",
+			"louns",
+			"lun",
+			"joy",
+			"camer",
+			"tweetZ",
+			"next",
+			"scene",
+			"next",
+			"scene",
+			" = []",
+			"tweet = []",
+			"tweets = []",
+			"createArc",
+			"connect",
+			">\n",
+			"latLongToVector3",
+			"create",
+			"arc",
+			"tweettexts",
+			"LOOP",
+			"tweets",
+			"next",
+			"latLongToVector3",
+			"twitter",
+			"query",
+			"track",
+			"controls",
+			"Tube",
+			"$",
+			"text",
+			"console",
+			"bump",
+			"armed",
+			"text",
+			"setup",
+			"console.log",
+			"armed",
+			"surface ",
+			"tweets",
+			"tweetIndex",
+			"line",
+			"space",
+			"skybox",
+			"scene",
+			"render",
+			"camera",
+			"controls",
+			"createSpaced",
+			"cubic",
+			"bezier",
+			"position.y",
+			"renderer",
+			"render",
+			"inline",
+			"- Hold down <i>A</i> and move your mouse around to rotate around the scene.\n                        - Hold down <i>S</i> and move your mouse up or down to zoom.\n                        - Hold down <i>D</i> and move your mouse around to pan.",
+			"print",
+			"webgl",
+			"scene",
+			"dae"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"availability",
+			"annualcost",
+			"description",
+			"",
+			"Esveld_Type",
+			"jQuery",
+			"galaxyBox"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5581,
+								5581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2241.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Concept1b-Index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7855,
+								7855
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 40.0,
+						"translation.y": 4206.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/css/Concept1b.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5005,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								305,
+								305
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Concept1b.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

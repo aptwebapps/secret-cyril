@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <!--Check if highcharts can be used offline!-->
+  <!--Can Highcharts update be triggered? or how does the slider actually trigger it.-->
+  <!--Can Highcharts update be triggered? or how does the slider actually trigger it.-->
+
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/Concept1b.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+ 
+	<div id="results" class="col-span-12">
+    	<div id="benefits" class="col-span-4">
+    	<div id="benefitscoveragemask"></div>
+    	<div id="benefitscoveragelabel">Benefits Coverage</div>
+		      <!--Divs that will hold each control and chart-->
+		      <div id="chart_div"> 	
+		      </div>
+    	</div>
+
+    	<div id="network" class="col-span-4">
+	    	<div id="circle4"style="position:absolute; left:67px; top:67px; background-color:#000000; height:230px; width:230px; border-radius:150px;"></div>
+	    	
+	    	<div id="circle3" style="position:absolute; left:87px; top:87px; background-color:#4A4A4A; height:190px; width:190px; border-radius:95px;"></div>
+
+	    	<div id="circle2" style="position:absolute; left:113px; top:113px; background-color:rgb(155,155,155); height:140px; width:140px; border-radius:70px;"></div>
+
+		  	<div id="circle1" style="position:absolute; left:133px; top:133px; background-color:#EAEAEA; height:100px; width:100px; border-radius:50px;"></div>
+
+		  	<div id="person" style="position:absolute; left:153px; top:153px;">
+		  		<img src="assets/images/Persona.png" alt="" class="logo">
+		  	</div>
+
+		  	<div id="providernetworklabel" style="">Provider Network</div>
+        	
+    	</div>
+
+    	<div id="summary" class="col-span-4">
+    	<h1>Summary</h1>
+		 <p>The estimated annual cost will be;</p>
+		 <div class="dollars">$</div><div id="annualCost">0.00</div>
+		 <br>
+		 <p>The worst case annual costs would be;</p>
+		 <div class="dollars">$</div><div id="worstCost">0.00</div>
+		 <div id="alerttext" class="alert col-span-10">tests</div>	         	
+	    </div>
+	 </div>
+
+	<div id="inputs" class="col-span-12">
+        <div class="criteria col-span-4" id="rating_criteria">
+	        <h1>Demographics</h1>
+
+	          <h4>User Type</h4>
+	          <fieldset> 
+	            <select id="user" class="" name="user"> 
+	            <option value="default">Select Who Will be Covered</option> 
+	            <option value="me">Me</option>
+	            <option value="me+1">Me+1</option>
+	            <option value="myfamily">Me &amp; My Family</option> 
+	            </select>
+	          </fieldset>
+
+	          <fieldset>
+	          <h4>Salary</h4>
+	          <span id="salary_range_label" class="slider-label">$ 50000 - $ 200000</span>
+	          <div id="salary_slider" class="slider"></div>
+
+	          </fieldset>
+
+	          <h4>Age Range of Users Covered</h4>
+	          <span id="age_range_label" class="slider-label">0 - 60 years old</span>
+	          <div id="age_slider" class="slider"></div>
+        </div>
+
+	    <div class="criteria col-span-4">
+	      <div class="" id="rating_criteria">
+	      <h1>Medical Factors</h1>
+	        <h4>Doctor Usage</h4>
+	        <fieldset>
+	        <ul id="doctorusage"> 
+	          <li>
+	          <input type="radio" name="doctorchoice" value="1">
+	          <span>As needed for preventive care</span>
+	          </li>
+	          <li>
+	          <input type="radio" name="doctorchoice" value="2">
+	          <span>Several times per year</span>
+	          </li>
+	          <li>
+	          <input type="radio" name="doctorchoice" value="3">
+	          <span>I'm on a first name basis</span>
+	          </li>
+	        </ul>
+	        </fieldset>
+
+	        <h4>Ongoing Medical Conditions</h4>
+	        <fieldset> 
+	          <select id="medicalconditions" class="" name="medicalconditions"> 
+	          <option value="default">Choose a Condition</option> 
+	          <option value="asthma">ASTHMA</option>
+	          <option value="arthritis">ARTHRITIS</option>
+	          <option value="angina">ANGINA</option> 
+	          <option value="diabetes">DIABETES</option> 
+	          <option value="eczema">ECZEMA</option> 
+	          <option value="kidneystones">KIDNEY STONES</option> 
+	          </select>
+	        </fieldset>
+	    </div>
+	  </div>
+
+      <div class="criteria col-span-4" id="rating_criteria">
+		        <h1 id="prescriptionfactorslabel">Prescription Factors</h1>
+
+		        <h4>Prescription Usage</h4>
+			        <ul id="prescriptionusage"> 
+			          <li>
+			          <input type="radio" name="prescriptionchoice" value="1">
+			          <span>Rarely</span>
+			          </li>
+			          <li>
+			          <input type="radio" name="prescriptionchoice" value="2">
+			          <span>Daily</span>
+			          </li>
+			          <li>
+			          <input type="radio" name="prescriptionchoice" value="3">
+			          <span>Multiple Prescriptions Daily</span>
+			          </li>
+			        </ul>
+
+			<h4>Specialty Prescriptions</h4>
+	        <fieldset> 
+	          <select id="specialtyprescriptions" class="" name="specialtyprescriptions"> 
+	          <option value="default">Select any costly prescriptions</option> 
+	          <option value="asthma">ASTHMA</option>
+	          <option value="arthritis">ARTHRITIS</option>
+	          <option value="angina">ANGINA</option> 
+	          <option value="diabetes">DIABETES</option> 
+	          <option value="eczema">ECZEMA</option> 
+	          <option value="kidneystones">KIDNEY STONES</option> 
+	          </select>
+	        </fieldset>
+			  
+			  
+			  <div id="filter_div"></div>
+
+<!-- 	          <h4>Network</h4>
+	          <span id="coverage_range_label" class="slider-label">Smaller - Larger</span>
+	          <div id="coverage_slider" class="slider"></div> -->
+
+</div>
+<script src="assets/js/googlejsapi.js" type="text/javascript"></script>
+<script src="Concept1b-Index.js" type="text/javascript"></script>
+<script>
+ // Load the Visualization API and the controls package.
+      google.load('visualization', '1.0', {'packages':['controls']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawDashboard);
+
+      // Callback that creates and populates a data table,
+      // instantiates a dashboard, a range slider and a pie chart,
+      // passes in the data and draws it.
+		window.prevalue=4;
+		window.privalue=4;
+		window.invalue=4;
+		window.outvalue=4;
+		window.emevalue=5;
+		window.spevalue=7;
+		window.weivalue=8;  
+
+      function drawDashboard() {
+
+        // Create our data table.
+        var data = google.visualization.arrayToDataTable([
+          ['CoverageType', 'Donuts eaten','note'],
+          ['Preventive Care' , prevalue,'test'],
+          ['Primary Care Visit', privalue,'test'],
+          ['Outpatient Hospital', outvalue,'test'],
+          ['Inpatient Hospital', invalue,'test'],
+          ['Emergency Care', emevalue,'test'],
+          ['Specialty Pharmacy', spevalue,'test'],
+          ['Weight Reduction', weivalue,'test']
+        ]);
+
+
+
+        // Create a dashboard.
+        window.dashboard = new google.visualization.Dashboard(
+            document.getElementById('benefits'));
+
+        // Create a range slider, passing some options
+        window.valueRangeSlider = new google.visualization.ControlWrapper({
+          'controlType': 'NumberRangeFilter',
+          'containerId': 'filter_div',
+          'options': {
+            'filterColumnLabel': 'Donuts eaten'
+          }
+        });
+
+        // Create a pie chart, passing some options
+        window.pieChart = new google.visualization.ChartWrapper({
+          'chartType': 'PieChart',
+          'containerId': 'chart_div',
+          'options': {
+            'pieHole': 0.4,
+            'colors':['#000000', '#4A4A4A', '#9B9B9B', '#D4D4D4', '#FFFFFF', '#E5E5E5'],
+            'backgroundColor': '#D3D3D3',
+            'width': 400,
+          'height': 400,
+            'legend': { position: "none" },
+            'pieSliceText': 'label',
+            'pieSliceTextStyle':{
+              color: 'grey', 
+              fontSize: 10,
+              },
+            'animation':{
+            duration: 200,
+            easing: 'inAndOut',
+          },
+        'tooltip': {isHtml: true}
+
+          }
+        });
+
+        // Establish dependencies, declaring that 'filter' drives 'pieChart',
+        // so that the pie chart will only display entries that are let through
+        // given the chosen slider range.
+        dashboard.bind(valueRangeSlider, pieChart);
+
+        // Draw the dashboard.
+        dashboard.draw(data);
+        valueRangeSlider.setState({'lowValue': 0, 'highValue': 4});
+        valueRangeSlider.draw();
+        $('#alerttext').fadeOut(); 
+        $('#chart_div').fadeOut();  
+        $(circle2).fadeOut();
+    	$(circle3).fadeOut();
+    	$(circle4).fadeOut();
+      }
+</script
+
+
+    </body>
+
+</html>
