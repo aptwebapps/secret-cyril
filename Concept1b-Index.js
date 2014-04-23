@@ -1,3 +1,5 @@
+window.myObject = {};
+
 $(document).ready(function ($) {
 
     window.usertypecost=0;
@@ -160,75 +162,60 @@ $(function () {
         }]
     };
 
-    var gaugeChartObj = new Highcharts.Chart(chartObj, function (chart) {
+    window.myObject.updateChart = function (value) {
+        $('#slider').slider('value', value);
+        // Have to call this twice ... once for slide and once for change. However, seems like
+        // it should not be necessary.
+        window.myObject.innerUpdateChart(null, {value: value});
+        window.myObject.innerUpdateChart(null, {value: value});
+    }
+
+    window.myObject.gaugeChartObj = new Highcharts.Chart(chartObj, function (chart) {
         var lastVal = 0;
-        $("#slider").slider({
+        var update = window.myObject.innerUpdateChart = function (event, ui) {
+                console.log('lastVal ' + lastVal);
+                console.log(window.myObject.gaugeChartObj === chart);
+                $("#slider-val").text(ui.value);
+
+
+                if (ui.value >= 3) {
+                    chart.series[0].data[0].setVisible();
+                }
+
+                if (ui.value >= 6) {
+                    chart.series[0].data[1].setVisible();
+                }
+
+                if (ui.value >= 10) {
+                    chart.series[0].data[2].setVisible();
+                }
+
+                if (ui.value >= 13) {
+                    chart.series[0].data[3].setVisible();
+                }
+
+                if (ui.value >= 16) {
+                    chart.series[0].data[4].setVisible();
+                }
+
+                if (ui.value >= 18) {
+                    chart.series[0].data[5].setVisible();
+                }
+
+                if (Math.abs(ui.value - lastVal) > 0) {
+                    updateGaugeChart(chart, ui.value);
+                    lastVal = ui.value;
+                }
+        };
+        window.myObject.slider = $("#slider").slider({
             value: 0,
             range: "min",
             min: 0,
             max: 20,
             step: 1,
             animate: true,
-            slide: function (event, ui) {
-                $("#slider-val").text(ui.value);
-
-                switch (ui.value) {
-                    case 3:
-                        chart.series[0].data[0].setVisible();
-                        break;
-                    case 6:
-                        chart.series[0].data[1].setVisible();
-                        break;
-                    case 10:
-                        chart.series[0].data[2].setVisible();
-                        break;
-                    case 13:
-                        chart.series[0].data[3].setVisible();
-                        break;
-                    case 16:
-                        chart.series[0].data[4].setVisible();
-                        break;
-                    case 18:
-                        chart.series[0].data[5].setVisible();
-                        break;
-                }
-
-                if (Math.abs(ui.value - lastVal) > 0) {
-                    updateGaugeChart(gaugeChartObj, ui.value);
-                    lastVal = ui.value;
-                }
-            },
-            change: function( event, ui ) {
-                  $("#slider-val").text(ui.value);
-
-                switch (ui.value) {
-                    case 3:
-                        chart.series[0].data[0].setVisible();
-                        break;
-                    case 6:
-                        chart.series[0].data[1].setVisible();
-                        break;
-                    case 10:
-                        chart.series[0].data[2].setVisible();
-                        break;
-                    case 13:
-                        chart.series[0].data[3].setVisible();
-                        break;
-                    case 16:
-                        chart.series[0].data[4].setVisible();
-                        break;
-                    case 18:
-                        chart.series[0].data[5].setVisible();
-                        break;
-                }
-
-                if (Math.abs(ui.value - lastVal) > 0) {
-                    updateGaugeChart(gaugeChartObj, ui.value);
-                    lastVal = ui.value;
-                }
-
-            },
-
+            slide: update,
+            change: update
         });
 
     });
