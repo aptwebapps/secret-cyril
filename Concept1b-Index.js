@@ -173,10 +173,7 @@ $(function () {
     window.myObject.gaugeChartObj = new Highcharts.Chart(chartObj, function (chart) {
         var lastVal = 0;
         var update = window.myObject.innerUpdateChart = function (event, ui) {
-                console.log('lastVal ' + lastVal);
-                console.log(window.myObject.gaugeChartObj === chart);
                 $("#slider-val").text(ui.value);
-
 
                 if (ui.value >= 3) {
                     chart.series[0].data[0].setVisible();
