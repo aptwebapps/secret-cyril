@@ -10,7 +10,7 @@ $(document).ready(function ($) {
     window.totalannualcost=0;
     window.worsttotalannualcost=0;
 
-//////SEEKING THE NUMBER
+///////NUMBER SEEKING//////////
 
 function total(){
   window.totalannualcost=usertypecost+salaryrangecost+agerangecost+doctorsusecost+medicalconditionscost+rxusecost+rxconditioncost;
@@ -24,7 +24,6 @@ function total(){
   seekAnnual(present,totalannualcost);
   seekWorst(presentWorse,worsttotalannualcost);
 }
-
 
 function seekAnnual(currentValue, targetValue){
   console.log(currentValue);
@@ -63,8 +62,181 @@ function seekWorst(currentValue, targetValue){
     }
     return val;
   }
-
 }
+////////////////HIGHCHARTS////////////////
+function updateGaugeChart(chart, value) {
+    var point = chart.series[0].points[0];
+    var newVal = value;
+    point.update(newVal);
+}
+
+$(function () {
+
+    Highcharts.setOptions({
+     colors: ['#000000', '#4A4A4A', '#D8D8D8', '#979797', '#BBBBBB', '#6F6F6F', '#F2F2F2', '#ffffff']
+    });
+
+
+    var chartObj = {
+        chart: {
+            renderTo: 'container',
+            type: 'pie',
+            plotBackgroundColor: '#D3D3D3',
+        },
+        title: {
+            text: 'Benefits<br>Coverage',
+            align: 'center',
+            color: 'black',
+            verticalAlign: 'middle',
+            y: 0,
+            style: {
+            color: 'black'
+            }
+        },
+
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    distance: -65,
+                    style: {
+                        color: 'grey'
+                    }
+                },
+                showInLegend: false,
+            }
+        },
+        pane: {
+            startAngle: 0,
+            endAngle: 0
+        },
+        credits: {
+        enabled: false,
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        events: {
+            load: function () {
+                var chart = this;
+                $(chart.series).each(function (i, series) {
+                    $('<li style="color: ' + serie.color + '">' + series.name + '</li>').click(function () {
+                        series.visible ? series.hide() : series.show();
+                    }).appendTo('#legend');
+                });
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Progress',
+            innerSize: '45%',
+            data: [{
+                name: 'Preventative',
+                y: 32.8,
+                visible: false
+            }, {
+                name: 'InPatient Care',
+                y: 20.8,
+                visible: false
+            }, {
+                name: 'OutPatient Care',
+                y: 26.8,
+                visible: false
+            }, {
+                name: 'Weight Reduction Coverage',
+                y: 36.8,
+                visible: false
+            }, {
+                name: 'Emergency Care',
+                y: 46.8,
+                visible: false
+            }, {
+                name: 'Specialty Pharmacy',
+                y: 16.8,
+                visible: false
+            }]
+        }]
+    };
+
+    var gaugeChartObj = new Highcharts.Chart(chartObj, function (chart) {
+        var lastVal = 0;
+        $("#slider").slider({
+            value: 0,
+            range: "min",
+            min: 0,
+            max: 20,
+            step: 1,
+            animate: true,
+            slide: function (event, ui) {
+                $("#slider-val").text(ui.value);
+
+                switch (ui.value) {
+                    case 3:
+                        chart.series[0].data[0].setVisible();
+                        break;
+                    case 6:
+                        chart.series[0].data[1].setVisible();
+                        break;
+                    case 10:
+                        chart.series[0].data[2].setVisible();
+                        break;
+                    case 13:
+                        chart.series[0].data[3].setVisible();
+                        break;
+                    case 16:
+                        chart.series[0].data[4].setVisible();
+                        break;
+                    case 18:
+                        chart.series[0].data[5].setVisible();
+                        break;
+                }
+
+                if (Math.abs(ui.value - lastVal) > 0) {
+                    updateGaugeChart(gaugeChartObj, ui.value);
+                    lastVal = ui.value;
+                }
+            },
+            change: function( event, ui ) {
+                  $("#slider-val").text(ui.value);
+
+                switch (ui.value) {
+                    case 3:
+                        chart.series[0].data[0].setVisible();
+                        break;
+                    case 6:
+                        chart.series[0].data[1].setVisible();
+                        break;
+                    case 10:
+                        chart.series[0].data[2].setVisible();
+                        break;
+                    case 13:
+                        chart.series[0].data[3].setVisible();
+                        break;
+                    case 16:
+                        chart.series[0].data[4].setVisible();
+                        break;
+                    case 18:
+                        chart.series[0].data[5].setVisible();
+                        break;
+                }
+
+                if (Math.abs(ui.value - lastVal) > 0) {
+                    updateGaugeChart(gaugeChartObj, ui.value);
+                    lastVal = ui.value;
+                }
+
+            },
+
+        });
+
+    });
+
+
+});
+
+
 
 ///////SLIDER VALUES and STYLING//////////
     $("#user")
@@ -148,20 +320,6 @@ function seekWorst(currentValue, targetValue){
         }
     });
 
-    //     $("#cost_slider").slider({
-    //     min: 1000,
-    //     max: 10000,
-    //     value: 500,
-    //     step: 1000,
-    //     range: "min",
-    //     slide: function (event, ui) {
-    //         console.log(ui.value)
-    //         $("#cost_range_label").html('$' + ui.value);
-    //         $('#cost_filter').val(ui.value).trigger('change');
-    //     }
-    // });
-
-
     $("#coverage_slider").slider({
         min: 0,
         max: 3,
@@ -194,8 +352,8 @@ function seekWorst(currentValue, targetValue){
     $("input:radio[name=doctorchoice]").click(function () {
         console.log($(this).val());
          if($(this).val()==1){
-          valueRangeSlider.setState({'lowValue': 0, 'highValue': 4});
-          valueRangeSlider.draw();
+          // valueRangeSlider.setState({'lowValue': 0, 'highValue': 4});
+          // valueRangeSlider.draw();
           doctorsusecost=0;
           total();
 
@@ -206,8 +364,8 @@ function seekWorst(currentValue, targetValue){
         }
         if($(this).val()==2){
           testValue1=9;
-          valueRangeSlider.setState({'lowValue': 0, 'highValue': 6});
-          valueRangeSlider.draw();
+          // valueRangeSlider.setState({'lowValue': 0, 'highValue': 6});
+          // valueRangeSlider.draw();
           doctorsusecost=300;
           total();
 
@@ -225,8 +383,8 @@ function seekWorst(currentValue, targetValue){
         }
 
         if($(this).val()==3){
-          valueRangeSlider.setState({'lowValue': 0, 'highValue': 6});
-          valueRangeSlider.draw();
+          // valueRangeSlider.setState({'lowValue': 0, 'highValue': 6});
+          // valueRangeSlider.draw();
           doctorsusecost=700;
           total();
         }
@@ -250,8 +408,8 @@ function seekWorst(currentValue, targetValue){
         }
 
         if (medicalconditions == "ANGINA") {
-          valueRangeSlider.setState({'lowValue': 0, 'highValue': 8});
-          valueRangeSlider.draw();
+          // valueRangeSlider.setState({'lowValue': 0, 'highValue': 8});
+          // valueRangeSlider.draw();
           medicalconditionscost=1000;
           total();
           $('#alerttext')[0].innerHTML="Who couldnt stand to lose a little weight? Our weight reduction coverage has proven to improve the health of consumers with Angina by 50%."
@@ -274,8 +432,8 @@ function seekWorst(currentValue, targetValue){
         }
 
         if($(this).val()==2){
-        valueRangeSlider.setState({'lowValue': 0, 'highValue': 7});
-        valueRangeSlider.draw();
+        // valueRangeSlider.setState({'lowValue': 0, 'highValue': 7});
+        // valueRangeSlider.draw();
         $('#alerttext')[0].innerHTML="For individuals with who use prescriptions regularly we recommend adding our specialty pharmacy coverage which can save you thousands over traditional coverage."  
         $('#alerttext').fadeIn();
         $("#alerttext").delay(7000).fadeOut();
@@ -284,8 +442,8 @@ function seekWorst(currentValue, targetValue){
         }
         
         if($(this).val()==3){
-        valueRangeSlider.setState({'lowValue': 0, 'highValue': 7});
-        valueRangeSlider.draw();
+        // valueRangeSlider.setState({'lowValue': 0, 'highValue': 7});
+        // valueRangeSlider.draw();
         rxusecost=1500;
         total();
 

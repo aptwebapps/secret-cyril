@@ -12,24 +12,13 @@ h4, dd, .checkbox label{
   min-height: 400px;
 }
 
-#benefitscoveragemask{
-position: absolute;
-top: 75px;
-left: 70px;
-width: 250px;
-height: 250px;
-z-index: 1;
-border: solid 2px white;
-background-color: #D3D3D3;
-border-radius: 200px;
+.highcharts-background{
+  fill: none;
 }
 
-#benefitscoveragelabel{
-position:absolute; 
-top: 350px; 
-left: 108px;
-font-size: 20px;
-z-index:1;
+#benefits{
+  
+  
 }
 
 #providernetworklabel{

@@ -215,30 +215,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 9297,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Concept1b-Index.js",
-			"settings":
-			{
-				"buffer_size": 8643,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/Concept1b.css",
-			"settings":
-			{
-				"buffer_size": 5005,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -272,6 +248,11 @@
 	},
 	"file_history":
 	[
+		"/Users/markbreneman/Library/Application Support/com.bohemiancoding.sketch3/Plugins/library/measure.js",
+		"/Users/markbreneman/Desktop/sketch-measure-master/README.md",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1b/assets/css/Concept1b.css",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1b/index.html",
+		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1b/Concept1b-Index.js",
 		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/Concept1b-Chart.js",
 		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/assets/css/style.css",
 		"/Users/markbreneman/Documents/Smart/Project Work/CGN001/Prototypes/Concept1 Prototype/Concept1b/assets/css/stream.css",
@@ -382,6 +363,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"valueRa",
+			"value",
 			"covera",
 			"me+1",
 			"cost",
@@ -484,97 +467,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5581,
-								5581
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2241.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Concept1b-Index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8643,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7855,
-								7855
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 40.0,
-						"translation.y": 4206.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/css/Concept1b.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5005,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								305,
-								305
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

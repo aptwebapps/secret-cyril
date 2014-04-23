@@ -19,11 +19,13 @@
  
 	<div id="results" class="col-span-12">
     	<div id="benefits" class="col-span-4">
-    	<div id="benefitscoveragemask"></div>
-    	<div id="benefitscoveragelabel">Benefits Coverage</div>
-		      <!--Divs that will hold each control and chart-->
-		      <div id="chart_div"> 	
-		      </div>
+    	<script src="assets/js/highcharts.js"></script>
+			<div>
+				<div id="container" style="height:400px; margin: 0 auto">
+					<div id="addText" style="position:absolute; left:0px; top:0px;"></div>
+				</div>
+				<br>
+			</div>	
     	</div>
 
     	<div id="network" class="col-span-4">
@@ -57,6 +59,9 @@
 	<div id="inputs" class="col-span-12">
         <div class="criteria col-span-4" id="rating_criteria">
 	        <h1>Demographics</h1>
+
+	        	<div id="slider"></div>
+				<div id="slider-val"></div>
 
 	          <h4>User Type</h4>
 	          <fieldset> 
@@ -139,14 +144,19 @@
 	        <fieldset> 
 	          <select id="specialtyprescriptions" class="" name="specialtyprescriptions"> 
 	          <option value="default">Select any costly prescriptions</option> 
-	          <option value="asthma">ASTHMA</option>
-	          <option value="arthritis">ARTHRITIS</option>
-	          <option value="angina">ANGINA</option> 
-	          <option value="diabetes">DIABETES</option> 
-	          <option value="eczema">ECZEMA</option> 
-	          <option value="kidneystones">KIDNEY STONES</option> 
+	        	<option value="1">Abstral</option>
+			    <option value="4">Actiq</option>
+			    <option value="5">Activella</option>
+			    <option value="6">Acular</option>
+			    <option value="7">Adderall</option>
+			    <option value="8">Amitiza</option>
+			    <option value="9">Astagraf XL</option>
 	          </select>
 	        </fieldset>
+
+
+
+
 			  
 			  
 			  <div id="filter_div"></div>
@@ -159,92 +169,13 @@
 <script src="assets/js/googlejsapi.js" type="text/javascript"></script>
 <script src="Concept1b-Index.js" type="text/javascript"></script>
 <script>
- // Load the Visualization API and the controls package.
-      google.load('visualization', '1.0', {'packages':['controls']});
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawDashboard);
-
-      // Callback that creates and populates a data table,
-      // instantiates a dashboard, a range slider and a pie chart,
-      // passes in the data and draws it.
-		window.prevalue=4;
-		window.privalue=4;
-		window.invalue=4;
-		window.outvalue=4;
-		window.emevalue=5;
-		window.spevalue=7;
-		window.weivalue=8;  
-
-      function drawDashboard() {
-
-        // Create our data table.
-        var data = google.visualization.arrayToDataTable([
-          ['CoverageType', 'Donuts eaten','note'],
-          ['Preventive Care' , prevalue,'test'],
-          ['Primary Care Visit', privalue,'test'],
-          ['Outpatient Hospital', outvalue,'test'],
-          ['Inpatient Hospital', invalue,'test'],
-          ['Emergency Care', emevalue,'test'],
-          ['Specialty Pharmacy', spevalue,'test'],
-          ['Weight Reduction', weivalue,'test']
-        ]);
-
-
-
-        // Create a dashboard.
-        window.dashboard = new google.visualization.Dashboard(
-            document.getElementById('benefits'));
-
-        // Create a range slider, passing some options
-        window.valueRangeSlider = new google.visualization.ControlWrapper({
-          'controlType': 'NumberRangeFilter',
-          'containerId': 'filter_div',
-          'options': {
-            'filterColumnLabel': 'Donuts eaten'
-          }
-        });
-
-        // Create a pie chart, passing some options
-        window.pieChart = new google.visualization.ChartWrapper({
-          'chartType': 'PieChart',
-          'containerId': 'chart_div',
-          'options': {
-            'pieHole': 0.4,
-            'colors':['#000000', '#4A4A4A', '#9B9B9B', '#D4D4D4', '#FFFFFF', '#E5E5E5'],
-            'backgroundColor': '#D3D3D3',
-            'width': 400,
-          'height': 400,
-            'legend': { position: "none" },
-            'pieSliceText': 'label',
-            'pieSliceTextStyle':{
-              color: 'grey', 
-              fontSize: 10,
-              },
-            'animation':{
-            duration: 200,
-            easing: 'inAndOut',
-          },
-        'tooltip': {isHtml: true}
-
-          }
-        });
-
-        // Establish dependencies, declaring that 'filter' drives 'pieChart',
-        // so that the pie chart will only display entries that are let through
-        // given the chosen slider range.
-        dashboard.bind(valueRangeSlider, pieChart);
-
-        // Draw the dashboard.
-        dashboard.draw(data);
-        valueRangeSlider.setState({'lowValue': 0, 'highValue': 4});
-        valueRangeSlider.draw();
         $('#alerttext').fadeOut(); 
         $('#chart_div').fadeOut();  
         $(circle2).fadeOut();
     	$(circle3).fadeOut();
     	$(circle4).fadeOut();
-      }
+
 </script
 
 
